@@ -22,7 +22,28 @@
 .App-link {
   color: #61dafb;
 }
-
+.socialCardContainer{
+  width:60%;
+  margin : auto;
+  border: 2px solid red;
+  text-align: center;
+}
+#cardHeader{
+  background-color:gray;
+  margin: 25px 25px;
+  color: antiquewhite;
+  border:2px dotted greenyellow;
+}
+h1{
+  border: 3px dashed darkmagenta;
+  display: inline;
+}
+#firstDiv{
+  display: inline;
+}
+#secondDiv{
+  display: inline;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

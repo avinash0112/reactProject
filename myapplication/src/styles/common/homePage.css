@@ -1,0 +1,50 @@
+.container{
+    border:2px solid red;
+    margin: 20px 50px;
+    text-align: center;
+    background-color: #5CDB94;
+}
+.element{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 0px;
+    border: 1px solid gray;
+    width: 70%;
+    margin:auto;
+    margin-top: 20px;
+    position: relative;
+}
+div.element:nth-child(even){
+    background-color: rgb(133, 127, 187);
+    margin-bottom: 20px;
+}
+div.element:nth-child(odd){
+    background-color: rgb(231, 149, 94);
+    margin-bottom: 20px;
+}
+.header {
+    background-color: #05396B;
+    font-size: 35px;
+    width: 70%;
+    margin: auto;
+}
+.header h1{
+    color: #5CDB94;
+}
+/* .element::before{
+    counter-increment: num;
+    content: "value" counter(num);
+    position: absolute;
+    left: 0;
+}
+.element::after{
+    counter-increment: num2;
+    content: "aftervalue" counter(num2);
+    position: absolute;
+    right: 0;
+} 
+body{
+    counter-reset: num;
+    counter-reset: num2;
+}
+*/
