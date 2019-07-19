@@ -1,0 +1,62 @@
+#blueContainer {
+  background-color: #0002f3;
+  border: 2px white;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+#yellowContainer {
+  background-color: #ffff01;
+  width: 96%;
+  height: 250px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+#greenContainer {
+  width: 96%;
+  margin-top: 30px;
+  display: block;
+  margin: auto;
+}
+#greenOne {
+  width: 49%;
+  height: 250px;
+  background-color: #008001;
+  display: inline-block;
+  margin-right: 15px;
+}
+#greenTwo {
+  width: 48.2%;
+  height: 250px;
+  background-color: #008001;
+  display: inline-block;
+  margin-left: 15px;
+}
+#topContainer {
+  background-color: #ffff01;
+  width: 100px;
+  height: 100px;
+}
+#circle {
+  height: 30px;
+  width: 30px;
+  background-color: aquamarine;
+  border-radius: 50%;
+}
+#triangle {
+  height: 0px;
+  width: 0px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+}
+#triangle2{
+    height: 20px;
+    width: 20px;
+    padding-top:0px;
+    padding-bottom:20px solid green;
+    padding-left: 10px;
+    padding-right:10px ;
+}

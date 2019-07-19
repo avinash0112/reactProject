@@ -1,0 +1,15 @@
+.button1{
+    width: 100%;
+    background-color: aquamarine;
+}
+.listButtons{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    background-color: rgb(144, 179, 219);
+    font-weight: lighter;
+    margin: 0px 15px;
+    height: 100%;
+}
+/* .listButtons :hover{
+    background-color: blue;
+} */

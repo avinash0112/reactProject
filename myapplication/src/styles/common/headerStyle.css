@@ -1,0 +1,14 @@
+#headerContainer {
+  background-color: aqua;
+  border: 2px solid red;
+}
+.headerCommon {
+  display: inline-block;
+  margin-left: 10px;
+}
+#logo{
+    margin-top: 10px;
+}
+#customerName{
+    font-size: 20px;
+}
