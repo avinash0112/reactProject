@@ -5,7 +5,7 @@ export class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      userName: "value from state"
+      userName: "Initials"
     };
   }
   onInputChange = event => {

@@ -19,7 +19,8 @@ export class UserOutput extends React.Component {
       width: "50%",
       margin: "auto",
       marginTop: "10px",
-      color: "yellow"
+      color: "yellow",
+      fontSize: "30px"
     };
     return (
       <div>

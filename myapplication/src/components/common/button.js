@@ -1,34 +1,13 @@
 import React from "react";
 import "../../styles/common/buttonStyle.css";
 
-export class Button extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      buttonName: "initial",
-      count: 0
-    };
-    this.changeName = this.changeName.bind(this);
-  }
-  changeName() {
-    this.setState(state => ({
-      count: state.count + 1,
-      buttonName:
-        state.count % 2 === 0 ? state.buttonName + "a" : state.buttonName + "b"
-    }));
-  }
-  render() {
-    return (
-      <button onClick={this.changeName} className="button1">
-        {this.state.buttonName}
-      </button>
-    );
-  }
-}
 export class AddButton extends React.Component {
   render() {
     return (
-      <button className="listButtons" onClick={this.props.addElementMethod}>
+      <button
+        className="btn btn-primary listButtons"
+        onClick={this.props.addElementMethod}
+      >
         Add element
       </button>
     );
@@ -38,7 +17,7 @@ export class DeleteButton extends React.Component {
   render() {
     return (
       <button
-        className="listButtons"
+        className="btn btn-secondary listButtons"
         onClick={this.props.deleteElementFromBottomMethod}
       >
         Delete last element
@@ -46,16 +25,14 @@ export class DeleteButton extends React.Component {
     );
   }
 }
-export class DeleteByIndex extends React.Component {
-  render() {
-    return (
-      <button
-        className="listButtons"
-        onClick={this.props.togglePopup}
-      >
-        Delete by index
-      </button>
-    );
-  }
 
-}
+export const DeleteAllElements = props => {
+  return (
+    <button className="btn btn-danger listButtons" onClick={props.deleteAll}>
+      Delete All
+    </button>
+  );
+};
+export const DeleteSelected = props => {
+  return <button className="btn btn-info listButtons">Delete Selected</button>;
+};
