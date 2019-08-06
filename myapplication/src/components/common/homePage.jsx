@@ -1,12 +1,14 @@
 import React from "react";
 import "../../styles/common/homePage.css";
+import { DetailPanel } from "../common/detailPanel";
+import Header from "../common/header";
 import {
   AddButton,
   DeleteButton,
   DeleteAllElements,
   DeleteSelected
-} from "./button.js";
-import { Header, DisplayList } from "../displayList";
+} from "./button";
+import { DisplayList } from "../displayList";
 
 export class MainPage extends React.Component {
   constructor(props) {
@@ -32,6 +34,7 @@ export class MainPage extends React.Component {
   deleteElement = elementIndex => {
     let elementList = [...this.state.listElements];
     elementList.splice(elementIndex, 1);
+    // elementList[elementIndex].isSelected = false;
     this.setState({ listElements: elementList });
   };
   handleCheckBox = checkBoxIndex => {
@@ -60,7 +63,9 @@ export class MainPage extends React.Component {
           deleteElement={index => this.deleteElement(index)}
           toggleCheck={index => this.handleCheckBox(index)}
         />
+        <DetailPanel />
       </div>
     );
   }
+  
 }
